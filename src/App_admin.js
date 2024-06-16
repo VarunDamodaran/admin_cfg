@@ -109,7 +109,7 @@ function App_admin() {
     }
 
     // Filter UserData based on schoolName
-    const filteredData = UserData.filter(student => student.student_school === schoolName);
+    const filteredData = UserData.filter(student => student.student_school.toLowerCase() === schoolName.toLowerCase());
 
     // Initialize an object to store count of students at each level
     const levelCounts = {};
