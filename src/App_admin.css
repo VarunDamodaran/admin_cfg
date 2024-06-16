@@ -1,0 +1,149 @@
+/* App_admin container styling */
+.App_admin {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo styling */
+.App_admin-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App_admin-logo {
+    animation: App_admin-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header styling */
+.App_admin-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Link styling */
+.App_admin-link {
+  color: #61dafb;
+}
+
+/* Logo animation */
+@keyframes App_admin-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Chart container styling */
+.chart-container {
+  width: 700px;
+  /* margin: 0 auto; */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for laptops */
+@media (max-width: 1200px) {
+  .chart-container {
+    width: 80%;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .chart-container {
+    width: 95%;
+  }
+}
+
+/* Principal info container styling */
+.principal-info {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.principal-info:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Principal info image styling */
+.principal-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* Principal info text styling */
+.principal-info .details {
+  text-align: left;
+}
+
+.principal-info .details h4 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.principal-info .details p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #666;
+}
+
+/* Input field styling */
+input[type="text"] {
+  padding: 10px 15px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 250px;
+}
+
+input[type="text"]:focus {
+  border-color: #61dafb;
+}
+
+/* Form container styling */
+.form-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container label {
+  margin-right: 10px;
+  font-size: 1em;
+  color: #333;
+}
